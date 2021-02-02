@@ -50,6 +50,20 @@
             <!--在引用时请在maven中央仓库搜索2.X最新版本号-->
             <version>2.0.8</version>
         </dependency>
+
+        <!--日志管理-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

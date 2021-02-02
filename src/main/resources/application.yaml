@@ -17,3 +17,12 @@ server:
 knife4j:
   enable: true
 
+# 日志管理
+logging:
+  level:
+    root: info
+  # 日志配置文件存放目录
+  config: classpath:logback-spring.xml
+
+
+

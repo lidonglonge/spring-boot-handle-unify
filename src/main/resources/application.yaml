@@ -3,6 +3,7 @@ spring:
   application:
     name: spring-boot-handle-unify
 
+
   # Unable to start LiveReload server
   # 在使用SpringBoot 热部署插件 devtools ,同时启动多个Application时，控制台会报这个警告
   # DevToolsProperties中配置了一个端口,默认是35729, 提示这个错误是端口冲突, 修改一下端口既可
@@ -12,4 +13,7 @@ spring:
 server:
   port: 8080
 
+# knife4j增强功能需要通过配置yml配置文件开启增强,自2:0:7开始: 接口添加作者
+knife4j:
+  enable: true
 

@@ -1,0 +1,29 @@
+# 应用名称
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 数据源名称
+    name: defaultDataSource
+    username: root
+    password: root
+    url: jdbc:mysql://82.156.102.139:3306/test?serverTimezone=UTC
+
+
+server:
+  port: 8080
+
+# knife4j增强功能需要通过配置yml配置文件开启增强,自2:0:7开始: 接口添加作者
+knife4j:
+  enable: true
+  production: true
+
+
+mybatis-plus:
+  # xml
+  mapper-locations: classpath:mapper/*Mapper.xml
+  # 实体扫描，多个package用逗号或者分号分隔
+  type-aliases-package: com.fengwenyi.mp3demo.model
+
+
+
+

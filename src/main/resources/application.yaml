@@ -2,6 +2,8 @@
 spring:
   application:
     name: spring-boot-handle-unify
+  profiles:
+    active: dev
 
 
   # Unable to start LiveReload server
@@ -10,12 +12,10 @@ spring:
   devtools:
     livereload:
       port: 35739
-server:
-  port: 8080
 
-# knife4j增强功能需要通过配置yml配置文件开启增强,自2:0:7开始: 接口添加作者
-knife4j:
-  enable: true
+
+
+
 
 # 日志管理
 logging:

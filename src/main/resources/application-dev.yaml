@@ -1,0 +1,37 @@
+# 应用名称
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # 数据源名称
+    name: defaultDataSource
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/saomaji?serverTimezone=UTC
+
+
+
+  # Unable to start LiveReload server
+  # 在使用SpringBoot 热部署插件 devtools ,同时启动多个Application时，控制台会报这个警告
+  # DevToolsProperties中配置了一个端口,默认是35729, 提示这个错误是端口冲突, 修改一下端口既可
+  devtools:
+    livereload:
+      port: 35739
+server:
+  port: 8090
+
+# knife4j增强功能需要通过配置yml配置文件开启增强,自2:0:7开始: 接口添加作者
+knife4j:
+  enable: true
+
+
+mybatis-plus:
+  # xml
+  mapper-locations: classpath:mapper/*Mapper.xml
+  # 实体扫描，多个package用逗号或者分号分隔
+  type-aliases-package: com.fengwenyi.mp3demo.model
+  configuration:
+    # 这个配置会将执行的sql打印出来，在开发或测试的时候可以用
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+

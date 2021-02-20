@@ -20,7 +20,7 @@ public interface UserinfoService extends IService<UserinfoEntity> {
      * @param userinfoEntity
      * @return 返回查询结果
      */
-    public List<UserinfoEntity> ifThereIsA(UserinfoEntity userinfoEntity);
+    List<UserinfoEntity> ifThereIsA(UserinfoEntity userinfoEntity);
 
 
 }

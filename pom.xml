@@ -114,7 +114,7 @@
         </dependency>
 
 
-
+        <!-- 代码生成需要使用的模板引擎-->
         <dependency>
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity-engine-core</artifactId>

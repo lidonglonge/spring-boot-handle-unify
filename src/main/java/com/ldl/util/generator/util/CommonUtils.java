@@ -146,6 +146,8 @@ public class CommonUtils {
                 return new FreemarkerTemplateEngine();
             case "beetl":
                 return new BeetlTemplateEngine();
+            default:
+                System.out.println("结束");
         }
         return new VelocityTemplateEngine();
     }
@@ -167,7 +169,7 @@ public class CommonUtils {
         DataSourceConfig dataSourceConfig = dataSourceConfig(dbType, dbUrl, username, password, driver);
         StrategyConfig strategyConfig = strategyConfig(tablePrefixes, tableNames, fieldPrefixes);
         PackageConfig packageConfig = packageConfig(packageName);
-//        InjectionConfig injectionConfig = injectionConfig(packageConfig);
+//      InjectionConfig injectionConfig = injectionConfig(packageConfig);
         AbstractTemplateEngine templateEngine = getTemplateEngine();
         new AutoGenerator()
                 .setGlobalConfig(globalConfig)
